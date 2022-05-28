@@ -1,0 +1,1 @@
+{"version":3,"sources":["home.scss"],"names":[],"mappings":"AAAA;EACI;EACA","file":"../../home.css","sourcesContent":[".main-info {\r\n    display: flex;\r\n    color: black;\r\n}"]}

@@ -1,0 +1,15 @@
+.soc {
+  margin: 50px 0 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.soc img {
+  width: calc(100vw - 90%);
+  height: 150px;
+  transition: 0.1s;
+}
+.soc img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+/*# sourceMappingURL=css/contacts.css.map */

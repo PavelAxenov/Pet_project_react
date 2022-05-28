@@ -1,0 +1,97 @@
+.main-info {
+    display: flex;
+    color: #070707;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 calc(100vw - 85%);
+
+    .name {
+        font-size: 50px;
+        line-height: 59px;
+        color: #070707;
+        font-family: "Aladin", cursive;
+        margin: 35px 0;
+        
+        @media screen and (max-width: 650px) {
+            margin: 15px 0;
+            font-size: 30px;
+            line-height: 39px;;
+        }
+    }
+    .prof {
+        font-size: 18px;
+        line-height: 22px;
+        font-family: Arial, sans-serif;
+        justify-content: center;
+        align-self: center;
+        max-width: 190px;
+
+        @media screen and (max-width: 650px) {
+            margin: 10px 0;
+            padding-left: 30px;
+        }
+    }
+    .lang {
+        display: flex;
+        justify-content: baseline;
+        align-self: center;
+        height: 25px;
+        
+        a {
+            font-size: 18px;
+            text-decoration: none;
+            color: #828282;
+
+            &:hover {
+                color: #070707;
+                text-decoration: underline;
+            }
+        }
+
+        @media screen and (max-width: 860px) {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        margin: 0 calc(100vw - 95%);
+    }
+
+    @media screen and (max-width: 860px) {
+        margin: 0 calc(100vw - 85%);
+    }
+
+    @media screen and (max-width: 650px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .main-picture {
+        display: none;
+    }    
+}
+
+.main-picture {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    .photo {
+        max-width: 100vw;
+        @media screen and (max-width: 650px) {
+            display: none;    
+        }
+    }
+    .photo_mini {
+        @media screen and (min-width: 650px) {
+            display: none;    
+        }
+    }
+    
+}
+

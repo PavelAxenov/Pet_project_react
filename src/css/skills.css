@@ -1,0 +1,74 @@
+.skills {
+  margin-top: 50px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+@media screen and (max-width: 860px) {
+  .skills {
+    margin-top: 15px;
+  }
+}
+.skills h1, .skills span {
+  font-family: "Beau Rivage";
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 56px;
+}
+@media screen and (max-width: 1070px) {
+  .skills h1, .skills span {
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .skills h1, .skills span {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+}
+.skills ul {
+  list-style-type: none;
+  align-items: center;
+}
+.skills li {
+  display: flex;
+  flex-direction: column;
+}
+.skills__programms {
+  display: grid;
+  padding: 0;
+  margin: 0 20px;
+  grid-template-columns: repeat(4, 180px);
+  gap: 90px;
+}
+.skills__programms .prog {
+  max-width: 180px;
+  max-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.skills__programms .prog:hover {
+  border-radius: 25%;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+@media screen and (max-width: 1070px) {
+  .skills__programms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+}
+/*# sourceMappingURL=css/skills.css.map */

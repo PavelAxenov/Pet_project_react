@@ -1,0 +1,300 @@
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.other_projects {
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  color: #000;
+}
+@media screen and (max-width: 500px) {
+  .other_projects p {
+    text-align: center;
+    margin: 20px 15px;
+  }
+}
+.other_projects a {
+  text-decoration: none;
+  color: #000;
+}
+.other_projects a:hover {
+  text-decoration: underline;
+  color: rgb(173, 6, 6);
+}
+
+.sl {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.sl .travel, .sl .places, .sl .todo-vue {
+  margin-top: 20px;
+}
+@media screen and (max-width: 1440px) {
+  .sl .places {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .sl {
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .sl .places {
+    margin: 20px 0 0;
+  }
+}
+
+.project {
+  text-align: center;
+  line-height: 30px;
+  font-size: 25px;
+  font-family: "Aladin", cursive;
+  margin: 0;
+}
+.project a {
+  text-decoration: none;
+  color: #000;
+}
+.project a:hover {
+  text-decoration: underline;
+  color: rgb(173, 6, 6);
+}
+
+.slider_1 {
+  width: 450px;
+  height: 350px;
+  overflow: hidden;
+}
+@media screen and (max-width: 425px) {
+  .slider_1 {
+    width: 100vw;
+    height: 375px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .slider_1 {
+    width: 100vw;
+    height: 325px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .slider_1 {
+    width: 100vw;
+    height: 300px;
+  }
+}
+.slider_1 .navigation {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.slider_1 .navigation .bar {
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #ddd;
+  opacity: 0.7;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+.slider_1 .navigation .bar:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.slider_1 .slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.slider_1 .slides input[name=r] {
+  position: absolute;
+  visibility: hidden;
+}
+.slider_1 .slides input[name=a] {
+  position: absolute;
+  visibility: hidden;
+}
+.slider_1 .slides .slide {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+.slider_1 .slides .slide img {
+  width: 100%;
+  height: 100%;
+}
+.slider_1 .slides #r1:checked ~ .s1 {
+  margin-left: 0;
+}
+.slider_1 .slides #r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+.slider_1 .slides #r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+.slider_1 .slides #r4:checked ~ .s1 {
+  margin-left: -75%;
+}
+
+.slider_2 {
+  width: 400px;
+  height: 350px;
+  overflow: hidden;
+}
+@media screen and (max-width: 425px) {
+  .slider_2 {
+    width: 100vw;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .slider_2 {
+    width: 100vw;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .slider_2 {
+    width: 100vw;
+    height: 325px;
+  }
+}
+.slider_2 .navigation {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.slider_2 .navigation .bar {
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #ddd;
+  opacity: 0.7;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+.slider_2 .navigation .bar:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.slider_2 .slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.slider_2 .slides input[name=r] {
+  position: absolute;
+  visibility: hidden;
+}
+.slider_2 .slides input[name=a] {
+  position: absolute;
+  visibility: hidden;
+}
+.slider_2 .slides .slide {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+.slider_2 .slides .slide img {
+  width: 100%;
+  height: 100%;
+}
+.slider_2 .slides #a1:checked ~ .s1 {
+  margin-left: 0;
+}
+.slider_2 .slides #a2:checked ~ .s1 {
+  margin-left: -25%;
+}
+.slider_2 .slides #a3:checked ~ .s1 {
+  margin-left: -50%;
+}
+.slider_2 .slides #a4:checked ~ .s1 {
+  margin-left: -75%;
+}
+
+.slider_3 {
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+}
+@media screen and (max-width: 425px) {
+  .slider_3 {
+    width: 100vw;
+    height: 275px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .slider_3 {
+    width: 100vw;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .slider_3 {
+    width: 100vw;
+    height: 225px;
+  }
+}
+.slider_3 .navigation {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.slider_3 .navigation .bar {
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #ddd;
+  opacity: 0.7;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+.slider_3 .navigation .bar:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.slider_3 .slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.slider_3 .slides input[name=r] {
+  position: absolute;
+  visibility: hidden;
+}
+.slider_3 .slides input[name=a] {
+  position: absolute;
+  visibility: hidden;
+}
+.slider_3 .slides .slide {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+.slider_3 .slides .slide img {
+  width: 100%;
+  height: 100%;
+}
+.slider_3 .slides #b1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+.middle {
+  position: relative;
+  margin: 15px auto 0;
+}
+/*# sourceMappingURL=css/portfolio.css.map */

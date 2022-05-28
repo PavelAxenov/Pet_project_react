@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    margin: 0;
+    padding: 0;
+}
+
+
+// Меню на дашборд
+.menu {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(5, 110px);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin: 0 calc(100vw - 85%);
+    border-bottom: 1px solid #828282;
+
+    li {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        
+    }
+    a {
+        font-size: 30px;
+        line-height: 33px;
+        text-decoration: none;
+        font-family: "Aladin", cursive;
+        color: #828282;
+        &:hover {
+            font-size: 33px;
+            color: #070707;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 20px;
+        padding-bottom: 15px;
+        margin: 0 calc(100vw - 95%);
+
+        a {
+            font-size: 20px;
+            line-height: 23px;
+
+            &:hover {
+                font-size: 23px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 861px) {
+    .lang {
+        display: none;
+    }
+    #menu-mob {
+        display: none;
+    }
+}
+
+// Меню на мобильную версию
+@media screen and (max-width: 860px) {
+    
+
+    #menu-dash {
+        display: none;
+    }
+    .menu-content {
+        font-family: "Aladin", cursive;
+        padding: 0 0 0 50px;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .collapsible-menu {
+        background: white;
+        padding: 15px 30px;
+        padding-bottom: 0;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            .lang {
+                padding-left: 10px;
+                display: flex;
+                align-self: center;
+                min-width: 35px;
+                justify-content: flex-end;
+
+                a {
+                    padding: 0;
+                }
+            }
+        }
+
+        a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #070707;
+        }
+
+        label {
+            font-family: "Sedgwick Ave Display", cursive;
+            font-size: 20px;
+            display: block;
+            cursor: pointer;
+            background: url(../images/menu24px.png) no-repeat left center;
+            padding: 0px 0 0px 50px;
+            max-width: 50px;
+        }
+    }
+
+    input#menu {
+        display: none;
+    }
+
+    input {
+        &:checked {
+            & + label {
+                background-image: url(../images/close24px.png);
+            }
+            & ~ .menu-content {
+                max-height: 100%;
+            }
+        }
+    }
+}

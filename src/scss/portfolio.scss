@@ -1,0 +1,334 @@
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.other_projects {
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #000;
+
+    @media screen and (max-width: 500px) {
+        p {
+            text-align: center;
+            margin: 20px 15px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        &:hover {
+            text-decoration: underline;
+            color: rgb(173, 6, 6);
+        }
+    }
+}
+
+.sl {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+        
+    .travel, .places, .todo-vue {
+        margin-top: 20px;
+    }
+
+    .places {
+        @media screen and (max-width: 1440px) {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        
+        .places {
+            margin: 20px 0 0;
+        }
+    }
+}
+
+.project {
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    font-family: "Aladin", cursive;
+    margin: 0;
+
+    a {
+        text-decoration: none;
+        color: #000;
+        &:hover {
+            text-decoration: underline;
+            color: rgb(173, 6, 6);
+        }
+    }
+}
+
+.slider_1 {
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+    @media screen and (max-width: 425px) {
+        width: 100vw;
+        height: 375px;
+    }
+    @media screen and (max-width: 375px) {
+        width: 100vw;
+        height: 325px;
+    }
+    @media screen and (max-width: 320px) {
+        width: 100vw;
+        height: 300px;
+    }
+    
+    .navigation {
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+
+        .bar {
+            height: 8px;
+            width: 30px;
+            margin: 6px;
+            cursor: pointer;
+            background-color: #ddd;
+            opacity: .7;
+            border-radius: 10px;
+            transition: all .4s ease;
+
+            &:hover {
+                opacity: 0.8;
+                transform: scale(1.1);
+
+            }
+        }
+    }
+
+    .slides {
+        width: 400%;
+        height: 100%;
+        display: flex;
+
+        input[name="r"] {
+            position: absolute;
+            visibility: hidden;
+        }
+        input[name="a"] {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .slide {
+            width: 25%;
+            transition: all .6s ease;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        #r1 {
+            &:checked ~ .s1 {
+                margin-left: 0;
+            }
+        }
+        #r2 {
+            &:checked ~ .s1 {
+                margin-left: -25%;
+            }
+        }
+        #r3 {
+            &:checked ~ .s1 {
+                margin-left: -50%;
+            }
+        }
+        #r4 {
+            &:checked ~ .s1 {
+                margin-left: -75%;
+            }
+        }
+    }
+}
+
+.slider_2 {
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+    @media screen and (max-width: 425px) {
+        width: 100vw;
+        height: 400px;
+    }
+    @media screen and (max-width: 375px) {
+        width: 100vw;
+        height: 350px;
+    }
+    @media screen and (max-width: 320px) {
+        width: 100vw;
+        height: 325px;
+    }
+    
+    .navigation {
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+
+        .bar {
+            height: 8px;
+            width: 30px;
+            margin: 6px;
+            cursor: pointer;
+            background-color: #ddd;
+            opacity: .7;
+            border-radius: 10px;
+            transition: all .4s ease;
+
+            &:hover {
+                opacity: 0.8;
+                transform: scale(1.1);
+
+            }
+        }
+    }
+
+    .slides {
+        width: 400%;
+        height: 100%;
+        display: flex;
+
+        input[name="r"] {
+            position: absolute;
+            visibility: hidden;
+        }
+        input[name="a"] {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .slide {
+            width: 25%;
+            transition: all .6s ease;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        #a1 {
+            &:checked ~ .s1 {
+                margin-left: 0;
+            }
+        }
+        #a2 {
+            &:checked ~ .s1 {
+                margin-left: -25%;
+            }
+        }
+        #a3 {
+            &:checked ~ .s1 {
+                margin-left: -50%;
+            }
+        }
+        #a4 {
+            &:checked ~ .s1 {
+                margin-left: -75%;
+            }
+        }
+    }
+}
+
+.slider_3 {
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+    @media screen and (max-width: 425px) {
+        width: 100vw;
+        height: 275px;
+    }
+    @media screen and (max-width: 375px) {
+        width: 100vw;
+        height: 250px;
+    }
+    @media screen and (max-width: 320px) {
+        width: 100vw;
+        height: 225px;
+    }
+    
+    .navigation {
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+
+        .bar {
+            height: 8px;
+            width: 30px;
+            margin: 6px;
+            cursor: pointer;
+            background-color: #ddd;
+            opacity: .7;
+            border-radius: 10px;
+            transition: all .4s ease;
+
+            &:hover {
+                opacity: 0.8;
+                transform: scale(1.1);
+
+            }
+        }
+    }
+
+    .slides {
+        width: 400%;
+        height: 100%;
+        display: flex;
+
+        input[name="r"] {
+            position: absolute;
+            visibility: hidden;
+        }
+        input[name="a"] {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .slide {
+            width: 25%;
+            transition: all .6s ease;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        #b1 {
+            &:checked ~ .s1 {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.middle {
+    position: relative;
+    margin: 15px auto 0;
+}
+
+
+
