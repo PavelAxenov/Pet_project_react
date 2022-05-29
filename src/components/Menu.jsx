@@ -28,10 +28,10 @@ export default function Menu() {
                     <li><Link to="/skills">Skills</Link></li>
                     <li><Link to="/portfolio">Portfolio</Link></li>
                     <li><Link to="/contacts">Contacts</Link></li>
-                        <p className="lang">
+                        {/* <p className="lang">
                             <a href="#" className="ru">RU&nbsp;|</a>
                             <a href="#" className="eng">&nbsp;ENG</a>
-                        </p>
+                        </p> */}
                     </ul>
                 </div>
             </nav>

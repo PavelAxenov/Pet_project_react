@@ -9,7 +9,7 @@
         font-size: 50px;
         line-height: 59px;
         color: #070707;
-        font-family: "Aladin", cursive;
+        font-family: 'Tiro Devanagari Sanskrit', serif;
         margin: 35px 0;
         
         @media screen and (max-width: 650px) {
@@ -21,10 +21,12 @@
     .prof {
         font-size: 18px;
         line-height: 22px;
-        font-family: Arial, sans-serif;
+        font-family: 'Tiro Devanagari Sanskrit', serif;
         justify-content: center;
         align-self: center;
         max-width: 190px;
+        text-align: center;
+
 
         @media screen and (max-width: 650px) {
             margin: 10px 0;

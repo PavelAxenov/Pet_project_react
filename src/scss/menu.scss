@@ -29,8 +29,9 @@ body {
         font-size: 30px;
         line-height: 33px;
         text-decoration: none;
-        font-family: "Aladin", cursive;
+        font-family: 'Tiro Devanagari Sanskrit', serif;
         color: #828282;
+        text-align: center;
         &:hover {
             font-size: 33px;
             color: #070707;
@@ -72,7 +73,7 @@ body {
         display: none;
     }
     .menu-content {
-        font-family: "Aladin", cursive;
+        font-family: 'Tiro Devanagari Sanskrit', serif;
         padding: 0 0 0 50px;
         max-height: 0;
         overflow: hidden;
@@ -108,7 +109,7 @@ body {
         }
 
         label {
-            font-family: "Sedgwick Ave Display", cursive;
+            font-family: 'Tiro Devanagari Sanskrit', serif;
             font-size: 20px;
             display: block;
             cursor: pointer;
