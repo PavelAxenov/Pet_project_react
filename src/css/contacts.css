@@ -1,14 +1,32 @@
-.soc {
+.social {
   margin: 50px 0 0;
   display: flex;
   justify-content: space-evenly;
 }
-.soc img {
+@media screen and (max-width: 1181px) {
+  .social {
+    margin: 100px 0 0;
+  }
+}
+@media screen and (max-width: 426px) {
+  .social {
+    margin: 0;
+    max-width: 110px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .social img {
+    max-width: 110px;
+    margin-top: 20px;
+  }
+}
+.social img {
   width: calc(100vw - 90%);
   height: 150px;
   transition: 0.1s;
 }
-.soc img:hover {
+.social img:hover {
   opacity: 0.5;
   cursor: pointer;
 }

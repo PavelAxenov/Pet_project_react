@@ -1,20 +1,33 @@
 import React from "react";
 import "../css/menu.css";
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
-import { click } from "@testing-library/user-event/dist/click";
 
 export default function Menu() {
-    
+    function handleClick(e) {
+        handleClickRemove(e);
+        e.target.classList.add('blackout');
+    }
+
+    function handleClickRemove() {
+        let menu = document.getElementById('menu-dash');
+        let menuLinks = menu.getElementsByTagName('a');
+
+        for (let i = 0; i < menuLinks.length; i++) {
+            if (menuLinks[i].classList.contains('blackout')) {
+                menuLinks[i].classList.remove('blackout')
+            }
+        }
+    }
+
     return (
         <section>
             {/* Меню на дашборд */}
-            <nav id="menu-dash" className="menu">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about-me">About me</Link></li>
-                <li><Link to="/skills">Skills</Link></li>
-                <li><Link to="/portfolio">Portfolio</Link></li>
-                <li><Link to="/contacts">Contacts</Link></li>
+            <nav id="menu-dash" className="menu" >
+                <li onClick={handleClick}><Link to="/">Главная</Link></li>
+                <li onClick={handleClick}><Link to="/about-me">Обо мне</Link></li>
+                <li onClick={handleClick}><Link to="/skills">Навыки</Link></li>
+                <li onClick={handleClick}><Link to="/portfolio">Портфолио</Link></li>
+                <li onClick={handleClick}><Link to="/contacts">Контакты</Link></li>
             </nav>
 
             {/* Меню на планшет и меньше */}
@@ -23,19 +36,14 @@ export default function Menu() {
                 <label htmlFor="menu">Menu</label>
                 <div className="menu-content">
                     <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about-me">About me</Link></li>
-                    <li><Link to="/skills">Skills</Link></li>
-                    <li><Link to="/portfolio">Portfolio</Link></li>
-                    <li><Link to="/contacts">Contacts</Link></li>
-                        {/* <p className="lang">
-                            <a href="#" className="ru">RU&nbsp;|</a>
-                            <a href="#" className="eng">&nbsp;ENG</a>
-                        </p> */}
+                        <li onClick={handleClick}><Link to="/">Home</Link></li>
+                        <li onClick={handleClick}><Link to="/about-me">About me</Link></li>
+                        <li onClick={handleClick}><Link to="/skills">Skills</Link></li>
+                        <li onClick={handleClick}><Link to="/portfolio">Portfolio</Link></li>
+                        <li onClick={handleClick}><Link to="/contacts">Contacts</Link></li>
                     </ul>
                 </div>
             </nav>
-            
         </section>
     );
 }

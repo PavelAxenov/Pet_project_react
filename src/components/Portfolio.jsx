@@ -93,7 +93,7 @@ export default function Portfolio() {
             </div>
 
             <div className="other_projects">
-                <p>Watch more my projects in my <a href="https://github.com/PavelAxenov">profile</a></p>
+                <p>Увидеть больше моих проектов можно в моем <a href="https://github.com/PavelAxenov">профиле</a></p>
             </div>
         </section>
     )

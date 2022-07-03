@@ -1,7 +1,23 @@
-.soc {
+.social {
     margin: 50px 0 0;
     display: flex;
     justify-content: space-evenly;
+    @media screen and (max-width: 1181px) {
+        margin: 100px 0 0;
+    }
+
+    @media screen and (max-width: 426px) {
+        margin: 0;
+        max-width: 110px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        img {
+            max-width: 110px;
+            margin-top: 20px;
+        }
+    }
 
     img {
         width: calc(100vw - 90%);

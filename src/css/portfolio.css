@@ -9,7 +9,6 @@ section {
   line-height: 30px;
   font-size: 25px;
   font-family: "Times New Roman", Times, serif;
-  text-decoration: none;
   color: #000;
 }
 @media screen and (max-width: 500px) {
@@ -19,7 +18,6 @@ section {
   }
 }
 .other_projects a {
-  text-decoration: none;
   color: #000;
 }
 .other_projects a:hover {

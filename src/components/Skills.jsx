@@ -13,8 +13,8 @@ import "../css/skills.css";
 export default function Skills() {
     return (
         <section className="skills">
-            <h1>Skills</h1>
-            <span>I work in such programs as</span>
+            <h1>Навыки</h1>
+            <span>Я работаю с такими программами как:</span>
             <ul className="skills__programms">
                 <li className="skills__prog">
                     <img src={html} className="prog" alt="html" />

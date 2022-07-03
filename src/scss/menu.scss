@@ -9,11 +9,12 @@ body {
 }
 
 
+
 // Меню на дашборд
 .menu {
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(5, 110px);
+    grid-template-columns: repeat(5, 140px);
     padding-top: 35px;
     padding-bottom: 35px;
     margin: 0 calc(100vw - 85%);
@@ -23,7 +24,10 @@ body {
         list-style-type: none;
         display: flex;
         justify-content: center;
-        
+
+        .blackout {
+            color: black;
+        }
     }
     a {
         font-size: 30px;
