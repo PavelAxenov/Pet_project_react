@@ -5,7 +5,7 @@
 ### Навыки
 ![Навыки](https://github.com/PavelAxenov/Pet_project_react/raw/main/src/images/readme/skills.jpg)
 
-##Стек
+## Стек
 * React
 * Gulp sass
 * React Routing
