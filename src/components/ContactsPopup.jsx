@@ -6,7 +6,7 @@ export default function ContactsPopup({open, setOpen, children}) {
         <section className={open ? "popupСommon popup_is-opened" : "popupСommon"} onClick={() => setOpen(false)}>
             <div className="popup" onClick={e => e.stopPropagation()}>
                 {children}
-                <button>
+                <button onClick={() =>  navigator.clipboard.writeText(children.props.children)}>
                     <img src={copy} alt="Копировать" className="copy" />
                 </button>
             </div>

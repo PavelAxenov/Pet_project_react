@@ -10,9 +10,6 @@ import profile from "../images/mesto/profile.jpg";
 import registration from "../images/mesto/registration.jpg";
 import todoList from "../images/todoList/todo.jpg";
 
-
-
-
 export default function Portfolio() {
     return (
         <section>
@@ -93,7 +90,7 @@ export default function Portfolio() {
             </div>
 
             <div className="other_projects">
-                <p>Увидеть больше моих проектов можно в моем <a href="https://github.com/PavelAxenov">профиле</a></p>
+                <p>Увидеть больше моих проектов можно в моем <a target="_blanck" href="https://github.com/PavelAxenov">профиле</a></p>
             </div>
         </section>
     )
