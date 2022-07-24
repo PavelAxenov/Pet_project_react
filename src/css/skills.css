@@ -49,8 +49,8 @@
   gap: 90px;
 }
 .skills__programms .prog {
-  max-width: 180px;
-  max-height: 180px;
+  width: 140px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,11 +58,6 @@
   overflow: hidden;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-.skills__programms .prog:hover {
-  border-radius: 25%;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
 }
 @media screen and (max-width: 1070px) {
   .skills__programms {
