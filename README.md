@@ -1,11 +1,11 @@
 # Проект: AboutMe
 ## [Демо проекта](https://pet-project-react.vercel.app)
 ### Главная страница
-![Главная](https://github.com/PavelAxenov/Pet_project_react/raw/main/src/images/main.jpg)
+![Главная](https://github.com/PavelAxenov/Pet_project_react/raw/main/src/images/readme/main.jpg)
 ### Навыки
-![Навыки](https://github.com/PavelAxenov/Pet_project_react/raw/main/src/images/skills.jpg)
+![Навыки](https://github.com/PavelAxenov/Pet_project_react/raw/main/src/images/readme/skills.jpg)
 
-##Стек
+## Стек
 * React
 * Gulp sass
 * React Routing
